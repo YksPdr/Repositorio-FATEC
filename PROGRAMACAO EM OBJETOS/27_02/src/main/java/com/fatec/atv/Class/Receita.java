@@ -24,13 +24,14 @@ public class Receita {
     public void setData(LocalDate data) { this.data = data; }
     public void setDescritivo(String descritivo) { this.descritivo = descritivo; }
 
-    public void prescrever() {
-        System.out.println("Receita emitida em " + data);
-    }
-
-    public void consultar() {
-        System.out.println("=== RECEITA ===");
+    public void mostrar() {
+        System.out.println("Receita: ");
+        System.out.println("Consulta: " + consulta);
         System.out.println("Data: " + data);
         System.out.println("Descrição: " + descritivo);
+    }
+
+    public void prescrever() {
+        System.out.println("Receita emitida em " + data);
     }
 }

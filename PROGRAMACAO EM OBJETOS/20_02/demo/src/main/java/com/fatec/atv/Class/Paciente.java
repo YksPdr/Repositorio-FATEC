@@ -1,4 +1,4 @@
-package com.fatec.atv;
+package com.fatec.atv.Class;
 
 public class Paciente {
     private String nome;
@@ -30,14 +30,15 @@ public class Paciente {
     public void setGenero(String genero) { this.genero = genero; }
     public void setIdade(int idade) { this.idade = idade; }
 
-    public void cadastrar() {
-        System.out.println("Paciente cadastrado com sucesso.");
-    }
-    public void consultar() {
-        System.out.println("Nome: " + nome);
+    public void mostrar() {
+        System.out.println("Paciente: " + nome);
         System.out.println("CPF: " + cpf);
         System.out.println("Telefone: " + telefone);
-        System.out.println("Gênero: " + genero);
+        System.out.println("Genero: " + genero);
         System.out.println("Idade: " + idade);
+    }
+
+    public void cadastrar() {
+        System.out.println("Paciente cadastrado com sucesso.");
     }
 }

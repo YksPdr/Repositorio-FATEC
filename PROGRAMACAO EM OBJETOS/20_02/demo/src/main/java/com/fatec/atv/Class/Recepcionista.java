@@ -1,4 +1,4 @@
-package com.fatec.atv;
+package com.fatec.atv.Class;
 
 public class Recepcionista {
     private String nome;
@@ -26,5 +26,13 @@ public class Recepcionista {
     public void setTelefone(String telefone) { this.telefone = telefone; }
     public void setSenha(String senha) { this.senha = senha; }
 
-    
+    public void mostrar() {
+        System.out.println("Recepcionista: " + nome);
+        System.out.println("CPF: " + cpf);
+        System.out.println("Telefone: " + telefone);
+    }
+
+    public void acessar() {
+        System.out.println("Recepcionista " + nome + " acessou o sistema.");
+    }
 }

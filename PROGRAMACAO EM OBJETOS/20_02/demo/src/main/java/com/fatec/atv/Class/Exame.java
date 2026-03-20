@@ -1,4 +1,4 @@
-package com.fatec.atv;
+package com.fatec.atv.Class;
 
 import java.time.LocalDate;
 
@@ -24,13 +24,14 @@ public class Exame {
     public void setData(LocalDate data) { this.data = data; }
     public void setDescritivo(String descritivo) { this.descritivo = descritivo; }
 
-    public void solicitar() {
-        System.out.println("Exame solicitado em " + data);
+    public void mostrar() {
+        System.out.println("Exame: ");
+        System.out.println("Consulta: " + consulta);
+        System.out.println("Data: " + data);
+        System.out.println("Descricao: " + descritivo);
     }
 
-    public void consultar() {
-        System.out.println("=== EXAME ===");
-        System.out.println("Data: " + data);
-        System.out.println("Descrição: " + descritivo);
+    public void solicitar() {
+        System.out.println("Exame solicitado em " + data);
     }
 }

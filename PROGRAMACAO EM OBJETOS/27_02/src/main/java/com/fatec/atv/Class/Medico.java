@@ -29,4 +29,15 @@ public class Medico {
     public void setTelefone(String telefone) { this.telefone = telefone; }
     public void setEspecialidade(String especialidade) { this.especialidade = especialidade; }
     public void setSenha(String senha) { this.senha = senha; }
+
+    public void mostrar() {
+        System.out.println("Medico: " + nome);
+        System.out.println("CRM: " + crm);
+        System.out.println("Telefone: " + telefone);
+        System.out.println("Especialidade: " + especialidade);
+    }
+    
+    public void acessar() {
+        System.out.println("Login efetuado. Médico: " + nome + " | CRM: " + crm);
+    }
 }

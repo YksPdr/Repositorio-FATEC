@@ -1,4 +1,4 @@
-package com.fatec.atv;
+package com.fatec.atv.Class;
 
 import java.time.LocalDate;
 import java.time.LocalTime;
@@ -29,10 +29,11 @@ public class Agenda {
     public void setMedico(Medico medico){ this.medico = medico; }
     public void setPaciente(Paciente paciente){ this.paciente = paciente; }
 
-    public void consultar(){
+    public void mostrar(){
+        System.out.println("Agenda: ");
         System.out.println("Data: " + data);
         System.out.println("Hora: " + hora);
-        System.out.println("Médico: " + medico);
+        System.out.println("Medico: " + medico);
         System.out.println("Paciente: " + paciente);
     }
 }
