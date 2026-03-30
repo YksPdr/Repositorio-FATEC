@@ -3,6 +3,8 @@ package com.fatec.atv;
 import java.time.LocalDate;
 import java.time.LocalTime;
 
+import main.java.com.fatec.atv.Class.ExceptionClinica;
+
 public class Agenda {
     private LocalDate data;
     private LocalTime hora;
@@ -31,23 +33,21 @@ public class Agenda {
     }
 
     public LocalDate getData() { return data; }
-    public LocalTime getHora() { return hora; }
-    public Medico getMedico() { return medico; }
-    public Paciente getPaciente() { return paciente; }
-
     public void setData(LocalDate data) { this.data = data; }
-    public void setHora(LocalTime hora) {
-        try {
-            if (hora == null) {
-                throw new Exception();
-            }
+
+    public LocalTime getHora() { return hora; }
+    public void setHora(LocalTime hora) throws ExceptionClinica {
+        if (hora == null) {
+            System.out.println("Cód: 400. A data não pode ser nula.");
+        } else {
             this.hora = hora;
-        } catch (Exception e) {
-            System.out.println("Exceção encontrada – Valores padrões definidos");
-            this.hora = LocalTime.of(0, 0);
         }
     }
+
+    public Medico getMedico() { return medico; }
     public void setMedico(Medico medico){ this.medico = medico; }
+
+    public Paciente getPaciente() { return paciente; }
     public void setPaciente(Paciente paciente){ this.paciente = paciente; }
 
     public void mostrar(){
