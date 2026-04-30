@@ -1,0 +1,38 @@
+1. O que é programação orientada a objetos?
+
+Programação Orientada a Objetos (POO) é uma forma de programação baseado na ideia de organizar o código em torno de objetos, que representam entidades do mundo real ou conceitos do sistema. 
+Em vez de focar apenas em funções e procedimentos, a POO organiza o programa combinando atributos e métodos dentro de estruturas chamadas objetos.
+
+2. Quais as vantagens em utilizar POO em relação à programação estruturada?
+
+As vantagens da POO são:
+
+- Melhor organização do código, pois cada objeto representa uma parte específica do sistema.
+- Maior reutilização, através de herança e reaproveitamento de classes.
+- Facilidade de manutenção, já que alterações podem ser feitas em partes específicas sem afetar todo o sistema.
+- Maior modularidade, tornando projetos grandes mais fáceis de gerenciar.
+- Mais próxima do mundo real, o que facilita o entendimento e modelagem do sistema.
+
+3. Defina o conceito de objeto no paradigma POO.
+
+No paradigma da Programação Orientada a Objetos, um objeto é uma instância de uma classe. Composto por:
+
+- Atributos = características ou dados do objeto.
+- Métodos = ações ou comportamentos que o objeto pode executar.
+
+4. Explique os 4 principais fundamentos do paradigma POO.
+
+1: Encapsulamento
+É o princípio de esconder os detalhes internos de um objeto, permitindo que seus dados sejam acessados apenas por meio de métodos específicos.
+Isso aumenta a segurança e evita alterações indevidas.
+
+2: Abstração
+Consiste em representar apenas as características essenciais de um objeto, ignorando detalhes desnecessários.
+É uma forma de simplificar a complexidade do sistema.
+
+3: Herança
+Permite que uma classe herde características e comportamentos de outra classe.
+Isso facilita a reutilização de código e a organização hierárquica.
+
+4: Polimorfismo
+É a capacidade de um mesmo método ou ação se comportar de maneiras diferentes, dependendo do objeto que o utiliza.

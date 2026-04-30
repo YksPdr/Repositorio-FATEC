@@ -1,0 +1,2 @@
+Polimorfismo é a capacidade que a programação orientada a objetos tem de permitir que um mesmo método seja usado de diferentes formas, dependendo do objeto que o executa. Na prática, isso significa que 
+você pode tratar vários objetos de maneira genérica, mas cada um deles vai responder de forma específica. Isso normalmente acontece quando usamos herança e sobrescrita de métodos (@Override).
